@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import './Navbar.css'
+import './styles/Navbar.css'
 import InboxIcon from '@material-ui/icons/Inbox';
 import MenuIcon from '@material-ui/icons/Menu';
 

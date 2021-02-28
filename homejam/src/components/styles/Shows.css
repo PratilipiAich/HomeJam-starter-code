@@ -1,0 +1,49 @@
+.text-container1{
+    margin: 0 0 10% 8%;
+    color: rgba(245, 245, 245, 0.842);   
+    display: inline;
+}
+
+.heading1 {
+    position:relative;
+    display:inline-block;
+    padding-bottom:20px;
+    font-size: 25pt;
+    font-weight: 500;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.heading1:after {
+    content:"";
+    position:absolute;
+    bottom:10px;
+    display:inline-block;
+    width:45px;
+    left: 0%;
+    border-radius: 20px;
+    border-bottom:blue solid 3px;
+}
+
+.view-all {
+    display: inline;
+    margin-left: 62%;
+    color: #F5CB0D;
+}
+
+.view-all:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.card-container {
+    margin: 2% 0 8% 8%;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .view-all {
+        display: inline;
+        margin-left: 15%;
+        color: #F5CB0D;
+    }
+}
