@@ -4,10 +4,12 @@ import Home from './components/pages/Home';
 import './App.css';
 function App() {
   return (
+ 
     <div className="bg-1">
       <Navbar />
       <Home />
     </div>
+ 
   );
 }
 
