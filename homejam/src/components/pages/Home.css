@@ -1,0 +1,22 @@
+.text-container{
+    margin: 10% 0px 10% 10%;
+    color: whitesmoke;
+}
+
+.heading {
+    font-size: 50pt;
+    font-weight: 550;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.content {
+    font-size: 12pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+}
+
+@media only screen and (max-width: 640px) {
+    .content {
+        width: fit-content;
+    }
+}

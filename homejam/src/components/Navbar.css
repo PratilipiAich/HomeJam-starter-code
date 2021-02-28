@@ -1,0 +1,41 @@
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #cf9802
+}
+.navbar {
+  background: rgba(218, 216, 216, 0);
+}
+#search {
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+  color: white;
+}
+
+.logo {
+   width: 50%;
+   height: auto;
+}
+i {
+  margin: 10px 10px 0px 0px;
+  color: white;
+}
+
+.hamburger {
+  color:  #fff;
+} 
+
+@media only screen and (max-width: 640px) {
+  #search-icon {
+    margin: 8% 0 10px 16%;
+  }
+  #search {
+   display: none;
+  }
+  .navbar{
+    font-size: 16pt;
+  }
+}
