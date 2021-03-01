@@ -30,10 +30,13 @@ i {
 
 @media only screen and (max-width: 640px) {
   #search-icon {
-    margin: 8% 0 10px 16%;
+    margin: 8% 0 4% 10%;
+    display: inline-block;
   }
   #search {
-   display: none;
+   display: inline-block;
+   width: fit-content;
+   margin: 0 0 2% 10%;
   }
   .navbar{
     font-size: 16pt;

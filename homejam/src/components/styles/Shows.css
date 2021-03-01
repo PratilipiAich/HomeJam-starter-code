@@ -35,8 +35,24 @@
     color: #fff;
     text-decoration: none;
 }
+
+.review-count {
+    display: inline;
+    margin-left: 70%;
+    color: gray;
+}
+
 .card-container {
     margin: 2% 0 8% 8%;
+}
+
+.review-container {
+    margin: 2% 0 8% 5%;
+}
+
+.review-count:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 
