@@ -1,5 +1,5 @@
 body {
-  background:#020025
+  background: #020025;
 }
 .bg-1 {
   background: linear-gradient(rgba(2, 0, 37, 0.3), rgba(2, 0, 37, 0.3)),
@@ -9,11 +9,15 @@ body {
   height: auto;
 }
 
-@media only screen and (max-width: 640px) {
+.bg-2 {
+}
+
+@media only screen and (max-width: 500px) {
   .bg-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("/src/assets/artists/cari-cari.jpg") no-repeat;
+      url("/src/assets/artists/cari-3.jpg") no-repeat;
     width: 100%;
     height: auto;
+    background-position: top center;
   }
 }

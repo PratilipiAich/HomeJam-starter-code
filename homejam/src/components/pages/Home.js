@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "../styles/Home.css";
 import "react-circular-progressbar/dist/styles.css";
-import { CircleProgress } from "react-gradient-progress";
 import {
-  CircularProgressbar,
   CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
 import Shows from "./Shows";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import EventIcon from '@material-ui/icons/Event';
+import EventIcon from "@material-ui/icons/Event";
+import VideocamOutlinedIcon from '@material-ui/icons/VideocamOutlined';
+import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
 
 class Home extends Component {
   render() {
@@ -22,11 +22,9 @@ class Home extends Component {
             and never miss out.
           </p>
         </div>
-
         <div className="progress-bar">
-          
-            <span>
-            <div style={{ width: 210, height: 210, display: "inline-block" }}>
+          <span>
+            <div style={{ width: 200, height: 200, display: "inline-block" }}>
               <CircularProgressbarWithChildren
                 value={65}
                 strokeWidth={0.5}
@@ -44,15 +42,22 @@ class Home extends Component {
                     height: "100px",
                   }}
                 >
-                  <FavoriteBorderIcon style={{width: 40, height: 40, color: "blue"}}/>
-                  <div style={{ fontSize: 30,fontFamily: "serif" }}>
-                    0
-                  </div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Label</div>
+                  <FavoriteBorderIcon
+                    style={{ width: 40, height: 40, color: "blue" }}
+                  />
+                  <div style={{ fontSize: 28, fontFamily: "serif" }}>456</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>Likes everyday</div>
                 </div>
               </CircularProgressbarWithChildren>
-              </div>
-              <div style={{ width: 210, height: 210, display: "inline-block", marginLeft: "3%" }}>
+            </div>
+            <div
+              style={{
+                width: 200,
+                height: 200,
+                display: "inline-block",
+                marginLeft: "3%",
+              }}
+            >
               <CircularProgressbarWithChildren
                 value={0}
                 strokeWidth={0.5}
@@ -70,15 +75,20 @@ class Home extends Component {
                     height: "100px",
                   }}
                 >
-                  <EventIcon style={{width: 40, height: 40}}/>
-                  <div style={{ fontSize: 30,fontFamily: "serif" }}>
-                    0
-                  </div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Label</div>
+                  <EventIcon style={{ width: 40, height: 40 }} />
+                  <div style={{ fontSize: 28, fontFamily: "serif" }}>745</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>Online events</div>
                 </div>
               </CircularProgressbarWithChildren>
-              </div>
-              <div style={{ width: 210, height: 210, display: "inline-block", marginLeft: "3%"  }}>
+            </div>
+            <div
+              style={{
+                width: 200,
+                height: 200,
+                display: "inline-block",
+                marginLeft: "3%",
+              }}
+            >
               <CircularProgressbarWithChildren
                 value={0}
                 strokeWidth={0.5}
@@ -96,15 +106,20 @@ class Home extends Component {
                     height: "100px",
                   }}
                 >
-                  <EventIcon style={{width: 40, height: 40}}/>
-                  <div style={{ fontSize: 30,fontFamily: "serif" }}>
-                    0
-                  </div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Label</div>
+                  <GroupOutlinedIcon style={{ width: 40, height: 40 }} />
+                  <div style={{ fontSize: 28, fontFamily: "serif" }}>+10K</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>Users</div>
                 </div>
               </CircularProgressbarWithChildren>
-              </div>
-              <div style={{ width: 210, height: 210, display: "inline-block", marginLeft: "3%"  }}>
+            </div>
+            <div
+              style={{
+                width: 200,
+                height: 200,
+                display: "inline-block",
+                marginLeft: "3%",
+              }}
+            >
               <CircularProgressbarWithChildren
                 value={0}
                 strokeWidth={0.5}
@@ -122,42 +137,13 @@ class Home extends Component {
                     height: "100px",
                   }}
                 >
-                  <EventIcon style={{width: 40, height: 40}}/>
-                  <div style={{ fontSize: 30,fontFamily: "serif" }}>
-                    0
-                  </div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Label</div>
+                  <VideocamOutlinedIcon style={{ width: 40, height: 40 }} />
+                  <div style={{ fontSize: 28, fontFamily: "serif" }}>+2</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>Views everyday</div>
                 </div>
               </CircularProgressbarWithChildren>
-              </div>
-            </span>
-          
-          {/* <span>
-            <CircleProgress
-              percentage={70}
-              strokeWidth={1}
-              secondaryColor="#868586"
-              primaryColor={["#FE068D", "#EF0183"]}
-            />
-            <CircleProgress
-              percentage={0}
-              strokeWidth={1}
-              secondaryColor="#868586"
-              primaryColor={["#FE068D", "#EF0183"]}
-            />
-            <CircleProgress
-              percentage={0}
-              strokeWidth={1}
-              secondaryColor="#868586"
-              primaryColor={["#FE068D", "#EF0183"]}
-            />
-            <CircleProgress
-              percentage={0}
-              strokeWidth={1}
-              secondaryColor="#868586"
-              primaryColor={["#FE068D", "#EF0183"]}
-            />
-          </span> */}
+            </div>
+          </span>
         </div>
         <Shows />
       </div>

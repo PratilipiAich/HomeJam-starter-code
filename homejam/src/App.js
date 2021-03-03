@@ -6,10 +6,12 @@ function App() {
   return (
  
     <div className="bg-1">
-      <Navbar />
+<Navbar />
+      <div className="bg-2">
+      
       <Home />
     </div>
- 
+    </div>
   );
 }
 
