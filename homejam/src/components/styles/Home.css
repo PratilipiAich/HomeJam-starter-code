@@ -1,32 +1,33 @@
-
-.text-container{
-    margin: 10% 0px 10% 10%;
-    color: rgba(245, 245, 245, 0.842);
-   
+.text-container {
+  margin: 10% 0px 10% 10%;
+  color: rgba(245, 245, 245, 0.842);
 }
 
 .heading {
-    font-size: 60pt;
-    font-weight: 550;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 60pt;
+  font-weight: 550;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .content {
-    font-size: 14pt;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 40%;
+  font-size: 14pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 40%;
 }
 
 .progress-bar {
-    color: #fff;
-    background: none;
-    margin-top: 15%;
-    margin-bottom: 10%;
+  color: #fff;
+  background: none;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 
-
 @media only screen and (max-width: 640px) {
-    .content {
-        width: fit-content;
-    }
+  .content {
+    width: fit-content;
+  }
+  .progress-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }

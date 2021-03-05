@@ -12,10 +12,10 @@ body {
 .bg-2 {
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 690px) {
   .bg-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("/src/assets/artists/cari-3.jpg") no-repeat;
+    background: linear-gradient(rgba(2, 0, 37, 0.3), rgba(2, 0, 37, 0.3)),
+      url("/src/assets/artists/cari-2.jpg") no-repeat;
     width: 100%;
     height: auto;
     background-position: top center;

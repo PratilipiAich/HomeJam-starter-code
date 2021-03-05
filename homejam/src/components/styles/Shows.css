@@ -57,9 +57,14 @@
 
 
 @media only screen and (max-width: 640px) {
-    .view-all {
-        display: inline;
-        margin-left: 15%;
-        color: #F5CB0D;
+    .heading1 {
+        font-size: 20pt;
     }
+    .view-all {
+        margin-left: 15%;
+    }
+    .review-count {
+        margin-left: 30%;
+    }
+    
 }
