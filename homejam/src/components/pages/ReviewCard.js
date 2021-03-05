@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
     border: "3px solid #F5CB0D",
     height: 240,
     marginLeft: "5%",
+    marginBottom: "5%",
+    marginTop: "5%",
   },
   avatar: {
     width: "70px",

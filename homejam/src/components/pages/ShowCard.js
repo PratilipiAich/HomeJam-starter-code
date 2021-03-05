@@ -16,20 +16,22 @@ import shilpa from "../../assets/artists/shilpa-rao.jpg";
 import vijay from "../../assets/artists/vijay.jpg";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ConfirmationNumberOutlinedIcon from "@material-ui/icons/ConfirmationNumberOutlined";
-import '../styles/Review.css'
 
 const useStyles = makeStyles({
   container: {
-overflowX: "scroll",
-overflowY: "hidden"
+    overflow: "auto",
+    whiteSpace: "nowrap",
   },
   root: {
-    maxWidth: 230,
+    width: 245,
+    maxWidth: 300,
     backgroundColor: "#04013E",
     color: "#fff",
     borderTop: "8px solid #230186",
     borderRight: "8px solid #230186",
     borderRadius: "10px",
+    display: "inline-block",
+    marginRight: "20px",
   },
   media: {
     height: 200,
@@ -68,129 +70,119 @@ export default function ShowCard() {
   const classes = useStyles();
 
   return (
-    <div>
-      <Grid container spacing={24} className="container">
-        <Grid item md={3}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={benny}
-                title="Benny Dayal"
-              />
-              <CardContent>
-                <Typography className={classes.tag}>Folk</Typography>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  className={classes.text}
-                >
-                  Benny Dayal
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" className={classes.btn}>
-                More Info <ArrowForwardIcon />
-              </Button>
-              <Button size="small" className={classes.ticket}>
-                <ConfirmationNumberOutlinedIcon />
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item md={3}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={vijay}
-                title="Vijay Yesudas"
-              />
-              <CardContent>
-                <Typography className={classes.tag}>Bolywood</Typography>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  className={classes.text}
-                >
-                  Vijay Yesudas
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" className={classes.btn}>
-                More Info <ArrowForwardIcon />
-              </Button>
-              <Button size="small" className={classes.ticket}>
-                <ConfirmationNumberOutlinedIcon />
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item md={3}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={andrea}
-                title="Andrea Jeremiah"
-              />
-              <CardContent>
-                <Typography className={classes.tag}>Folk</Typography>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  className={classes.text}
-                >
-                  Andrea Jeremiah
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" className={classes.btn}>
-                More Info <ArrowForwardIcon />
-              </Button>
-              <Button size="small" className={classes.ticket}>
-                <ConfirmationNumberOutlinedIcon />
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item md={3}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={shilpa}
-                title="Shilpa Rao"
-              />
-              <CardContent>
-                <Typography className={classes.tag}>Folk</Typography>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  className={classes.text}
-                >
-                  Shilpa Rao
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" className={classes.btn}>
-                More Info <ArrowForwardIcon />
-              </Button>
-              <Button size="small" className={classes.ticket}>
-                <ConfirmationNumberOutlinedIcon />
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-      </Grid>
+    <div className={classes.container}>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={benny}
+            title="Benny Dayal"
+          />
+          <CardContent>
+            <Typography className={classes.tag}>Folk</Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              className={classes.text}
+            >
+              Benny Dayal
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" className={classes.btn}>
+            More Info <ArrowForwardIcon />
+          </Button>
+          <Button size="small" className={classes.ticket}>
+            <ConfirmationNumberOutlinedIcon />
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={vijay}
+            title="Vijay Yesudas"
+          />
+          <CardContent>
+            <Typography className={classes.tag}>Bolywood</Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              className={classes.text}
+            >
+              Vijay Yesudas
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" className={classes.btn}>
+            More Info <ArrowForwardIcon />
+          </Button>
+          <Button size="small" className={classes.ticket}>
+            <ConfirmationNumberOutlinedIcon />
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={andrea}
+            title="Andrea Jeremiah"
+          />
+          <CardContent>
+            <Typography className={classes.tag}>Folk</Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              className={classes.text}
+            >
+              Andrea Jeremiah
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" className={classes.btn}>
+            More Info <ArrowForwardIcon />
+          </Button>
+          <Button size="small" className={classes.ticket}>
+            <ConfirmationNumberOutlinedIcon />
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={shilpa}
+            title="Shilpa Rao"
+          />
+          <CardContent>
+            <Typography className={classes.tag}>Folk</Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              className={classes.text}
+            >
+              Shilpa Rao
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" className={classes.btn}>
+            More Info <ArrowForwardIcon />
+          </Button>
+          <Button size="small" className={classes.ticket}>
+            <ConfirmationNumberOutlinedIcon />
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   );
 }

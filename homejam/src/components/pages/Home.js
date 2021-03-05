@@ -8,8 +8,8 @@ import {
 import Shows from "./Shows";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import EventIcon from "@material-ui/icons/Event";
-import VideocamOutlinedIcon from '@material-ui/icons/VideocamOutlined';
-import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
+import VideocamOutlinedIcon from "@material-ui/icons/VideocamOutlined";
+import GroupOutlinedIcon from "@material-ui/icons/GroupOutlined";
 
 class Home extends Component {
   render() {
@@ -26,7 +26,7 @@ class Home extends Component {
           <span>
             <div style={{ width: 200, height: 200, display: "inline-block" }}>
               <CircularProgressbarWithChildren
-                value={65}
+                value={60}
                 strokeWidth={0.5}
                 textSize={"10px"}
                 styles={buildStyles({
@@ -46,7 +46,9 @@ class Home extends Component {
                     style={{ width: 40, height: 40, color: "blue" }}
                   />
                   <div style={{ fontSize: 28, fontFamily: "serif" }}>456</div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Likes everyday</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>
+                    Likes everyday
+                  </div>
                 </div>
               </CircularProgressbarWithChildren>
             </div>
@@ -59,7 +61,7 @@ class Home extends Component {
               }}
             >
               <CircularProgressbarWithChildren
-                value={0}
+                value={70}
                 strokeWidth={0.5}
                 textSize={"10px"}
                 styles={buildStyles({
@@ -77,7 +79,9 @@ class Home extends Component {
                 >
                   <EventIcon style={{ width: 40, height: 40 }} />
                   <div style={{ fontSize: 28, fontFamily: "serif" }}>745</div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Online events</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>
+                    Online events
+                  </div>
                 </div>
               </CircularProgressbarWithChildren>
             </div>
@@ -90,7 +94,7 @@ class Home extends Component {
               }}
             >
               <CircularProgressbarWithChildren
-                value={0}
+                value={35}
                 strokeWidth={0.5}
                 textSize={"10px"}
                 styles={buildStyles({
@@ -121,7 +125,7 @@ class Home extends Component {
               }}
             >
               <CircularProgressbarWithChildren
-                value={0}
+                value={10}
                 strokeWidth={0.5}
                 textSize={"10px"}
                 styles={buildStyles({
@@ -139,7 +143,9 @@ class Home extends Component {
                 >
                   <VideocamOutlinedIcon style={{ width: 40, height: 40 }} />
                   <div style={{ fontSize: 28, fontFamily: "serif" }}>+2</div>
-                  <div style={{ fontSize: 16, color: "#868586" }}>Views everyday</div>
+                  <div style={{ fontSize: 16, color: "#868586" }}>
+                    Views everyday
+                  </div>
                 </div>
               </CircularProgressbarWithChildren>
             </div>
